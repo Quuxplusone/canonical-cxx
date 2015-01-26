@@ -1,0 +1,11 @@
+This repository may eventually contain "canonical" or
+"best-practices" skeletons for various kinds of classes
+that come up again and again in C++:
+
+  - completely generic `class Widget`
+  - `forward_iterator` class
+  - `random_access_iterator` class
+  - `allocator` class
+  - `istream` subclass
+  - `ostream` subclass
+  - sequence container class
