@@ -88,6 +88,13 @@ struct ForwardVectorIterator : IteratorBase
     // destructor.
     //
 #if ITERATOR_IS_MOVEONLY
+    // [iterator.iterators]p2.1: According to the standard, iterators must be
+    // copyable; a move-only type does not conform to the "Iterator" concept.
+    // However, in practice it's reasonable to imagine an iterator (such as a
+    // database cursor) that cannot be meaningfully copied. For such
+    // iterators, it suffices to delete the special member functions and the
+    // postfix operator++.
+    //
     ForwardVectorIterator(ForwardVectorIterator const&) = delete;
     ForwardVectorIterator& operator=(ForwardVectorIterator const&) = delete;
 #else
