@@ -3,7 +3,8 @@ This repository may eventually contain "canonical" or
 that come up again and again in C++:
 
   - completely generic `class Widget`
-  - `forward_iterator` class
+  - `forward_iterator` class (DONE)
+  - `bidirectional_iterator` class (DONE)
   - `random_access_iterator` class
   - `allocator` class
   - `istream` subclass
